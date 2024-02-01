@@ -397,7 +397,7 @@
             this.Controls.Add(this.V1);
             this.Controls.Add(this.wheel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MaximumSize = new System.Drawing.Size(272, 276);
+            this.MaximumSize = new System.Drawing.Size(208, 200);
             this.Name = "VIPfm";
             this.Load += new System.EventHandler(this.Busseatfm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.wheel)).EndInit();

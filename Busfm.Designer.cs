@@ -746,7 +746,7 @@
             this.Controls.Add(this.B1);
             this.Controls.Add(this.bwheel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MaximumSize = new System.Drawing.Size(272, 276);
+            this.MaximumSize = new System.Drawing.Size(208, 200);
             this.Name = "Busfm";
             this.Text = "Busfm";
             this.Load += new System.EventHandler(this.Busfm_Load);

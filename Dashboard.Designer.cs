@@ -166,6 +166,7 @@
             this.btnDriver.TabIndex = 7;
             this.btnDriver.Text = "Driver";
             this.btnDriver.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnDriver.Click += new System.EventHandler(this.btnDriver_Click);
             // 
             // btnReceipt
             // 

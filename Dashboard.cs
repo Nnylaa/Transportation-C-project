@@ -24,7 +24,12 @@ namespace Transportation_Project
 
         private void btnPassenger_Click(object sender, EventArgs e)
         {
-
+            Show.Controls.Clear();
+            passengerFm passfm = new passengerFm();
+            passfm.TopLevel = false;
+            //form4.TopMost = true;
+            Show.Controls.Add(passfm);
+            passfm.Show();
         }
 
         private void gunaPanel1_Paint(object sender, PaintEventArgs e)
@@ -72,6 +77,16 @@ namespace Transportation_Project
             //form4.TopMost = true;
             Show.Controls.Add(fmre);
             fmre.Show();
+        }
+
+        private void btnDriver_Click(object sender, EventArgs e)
+        {
+            Show.Controls.Clear();
+            DriverFm drivefm = new DriverFm();
+            drivefm.TopLevel = false;
+            //form4.TopMost = true;
+            Show.Controls.Add(drivefm);
+            drivefm.Show();
         }
     }
 }

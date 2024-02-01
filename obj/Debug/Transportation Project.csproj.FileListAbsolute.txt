@@ -19,3 +19,5 @@ D:\project\Transportation Project\Transportation Project\obj\Debug\Transportatio
 D:\project\Transportation Project\Transportation Project\obj\Debug\Transportation_Project.VIPfm.resources
 D:\project\Transportation Project\Transportation Project\obj\Debug\Transportation_Project.Busfm.resources
 D:\project\Transportation Project\Transportation Project\obj\Debug\Transportation_Project.recform.resources
+D:\project\Transportation Project\Transportation Project\obj\Debug\Transportation_Project.DriverFm.resources
+D:\project\Transportation Project\Transportation Project\obj\Debug\Transportation_Project.passengerFm.resources

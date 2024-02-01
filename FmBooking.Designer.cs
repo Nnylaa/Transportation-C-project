@@ -276,10 +276,10 @@
             this.visapay.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.visapay.ForeColor = System.Drawing.Color.AliceBlue;
             this.visapay.Image = ((System.Drawing.Image)(resources.GetObject("visapay.Image")));
-            this.visapay.ImageSize = new System.Drawing.Size(70, 30);
+            this.visapay.ImageSize = new System.Drawing.Size(50, 30);
             this.visapay.Location = new System.Drawing.Point(408, 412);
             this.visapay.Name = "visapay";
-            this.visapay.OnHoverBaseColor = System.Drawing.Color.MidnightBlue;
+            this.visapay.OnHoverBaseColor = System.Drawing.Color.LightBlue;
             this.visapay.OnHoverBorderColor = System.Drawing.Color.DarkGray;
             this.visapay.OnHoverForeColor = System.Drawing.Color.White;
             this.visapay.OnHoverImage = null;
@@ -304,10 +304,10 @@
             this.QRpay.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.QRpay.ForeColor = System.Drawing.Color.AliceBlue;
             this.QRpay.Image = ((System.Drawing.Image)(resources.GetObject("QRpay.Image")));
-            this.QRpay.ImageSize = new System.Drawing.Size(70, 35);
+            this.QRpay.ImageSize = new System.Drawing.Size(60, 35);
             this.QRpay.Location = new System.Drawing.Point(408, 348);
             this.QRpay.Name = "QRpay";
-            this.QRpay.OnHoverBaseColor = System.Drawing.Color.MidnightBlue;
+            this.QRpay.OnHoverBaseColor = System.Drawing.Color.LightBlue;
             this.QRpay.OnHoverBorderColor = System.Drawing.Color.DarkGray;
             this.QRpay.OnHoverForeColor = System.Drawing.Color.White;
             this.QRpay.OnHoverImage = null;
@@ -335,7 +335,7 @@
             this.paydirect.ImageSize = new System.Drawing.Size(30, 30);
             this.paydirect.Location = new System.Drawing.Point(408, 283);
             this.paydirect.Name = "paydirect";
-            this.paydirect.OnHoverBaseColor = System.Drawing.Color.MidnightBlue;
+            this.paydirect.OnHoverBaseColor = System.Drawing.Color.LightBlue;
             this.paydirect.OnHoverBorderColor = System.Drawing.Color.DarkGray;
             this.paydirect.OnHoverForeColor = System.Drawing.Color.White;
             this.paydirect.OnHoverImage = null;
