@@ -38,7 +38,7 @@
             this.recieptshow = new System.Windows.Forms.Panel();
             this.butleft = new Guna.UI.WinForms.GunaPanel();
             this.bookingfrm = new Guna.UI.WinForms.GunaPanel();
-            this.gunaComboBox1 = new Guna.UI.WinForms.GunaComboBox();
+            this.txtTime = new Guna.UI.WinForms.GunaComboBox();
             this.timetxt = new Guna.UI.WinForms.GunaLabel();
             this.VIPbtn = new System.Windows.Forms.Button();
             this.BUSbtn = new System.Windows.Forms.Button();
@@ -48,7 +48,7 @@
             this.paydirect = new Guna.UI.WinForms.GunaButton();
             this.paymethod = new Guna.UI.WinForms.GunaLabel();
             this.seatshow = new System.Windows.Forms.Panel();
-            this.numberric = new Guna.UI.WinForms.GunaNumeric();
+            this.txtQuantity = new Guna.UI.WinForms.GunaNumeric();
             this.Quantity = new Guna.UI.WinForms.GunaLabel();
             this.Vehicletxt = new Guna.UI.WinForms.GunaLabel();
             this.Phonenumbertxt = new Guna.UI.WinForms.GunaLabel();
@@ -116,7 +116,7 @@
             this.printbtn.BorderColor = System.Drawing.Color.Black;
             this.printbtn.DialogResult = System.Windows.Forms.DialogResult.None;
             this.printbtn.FocusedColor = System.Drawing.Color.Empty;
-            this.printbtn.Font = new System.Drawing.Font("Roboto", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.printbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.printbtn.ForeColor = System.Drawing.Color.White;
             this.printbtn.Image = null;
             this.printbtn.ImageSize = new System.Drawing.Size(20, 20);
@@ -153,7 +153,7 @@
             // bookingfrm
             // 
             this.bookingfrm.BackColor = System.Drawing.Color.AliceBlue;
-            this.bookingfrm.Controls.Add(this.gunaComboBox1);
+            this.bookingfrm.Controls.Add(this.txtTime);
             this.bookingfrm.Controls.Add(this.timetxt);
             this.bookingfrm.Controls.Add(this.VIPbtn);
             this.bookingfrm.Controls.Add(this.BUSbtn);
@@ -163,7 +163,7 @@
             this.bookingfrm.Controls.Add(this.paydirect);
             this.bookingfrm.Controls.Add(this.paymethod);
             this.bookingfrm.Controls.Add(this.seatshow);
-            this.bookingfrm.Controls.Add(this.numberric);
+            this.bookingfrm.Controls.Add(this.txtQuantity);
             this.bookingfrm.Controls.Add(this.Quantity);
             this.bookingfrm.Controls.Add(this.Vehicletxt);
             this.bookingfrm.Controls.Add(this.Phonenumbertxt);
@@ -177,42 +177,42 @@
             this.bookingfrm.Name = "bookingfrm";
             this.bookingfrm.Size = new System.Drawing.Size(758, 560);
             this.bookingfrm.TabIndex = 0;
-            this.bookingfrm.Paint += new System.Windows.Forms.PaintEventHandler(this.bookingfrm_Paint);
+     
             // 
-            // gunaComboBox1
+            // txtTime
             // 
-            this.gunaComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaComboBox1.BaseColor = System.Drawing.Color.White;
-            this.gunaComboBox1.BorderColor = System.Drawing.Color.Gray;
-            this.gunaComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.gunaComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.gunaComboBox1.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.gunaComboBox1.ForeColor = System.Drawing.Color.Black;
-            this.gunaComboBox1.FormattingEnabled = true;
-            this.gunaComboBox1.IntegralHeight = false;
-            this.gunaComboBox1.ItemHeight = 30;
-            this.gunaComboBox1.Items.AddRange(new object[] {
+            this.txtTime.BackColor = System.Drawing.Color.Transparent;
+            this.txtTime.BaseColor = System.Drawing.Color.White;
+            this.txtTime.BorderColor = System.Drawing.Color.Gray;
+            this.txtTime.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.txtTime.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtTime.FocusedColor = System.Drawing.Color.Empty;
+            this.txtTime.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtTime.ForeColor = System.Drawing.Color.Black;
+            this.txtTime.FormattingEnabled = true;
+            this.txtTime.IntegralHeight = false;
+            this.txtTime.ItemHeight = 30;
+            this.txtTime.Items.AddRange(new object[] {
             "8:00 AM",
             "10:00 AM",
             "1:00 PM",
             "3:00 PM"});
-            this.gunaComboBox1.Location = new System.Drawing.Point(408, 123);
-            this.gunaComboBox1.Name = "gunaComboBox1";
-            this.gunaComboBox1.OnHoverItemBaseColor = System.Drawing.Color.SteelBlue;
-            this.gunaComboBox1.OnHoverItemForeColor = System.Drawing.Color.AliceBlue;
-            this.gunaComboBox1.Radius = 5;
-            this.gunaComboBox1.Size = new System.Drawing.Size(117, 36);
-            this.gunaComboBox1.TabIndex = 22;
+            this.txtTime.Location = new System.Drawing.Point(408, 123);
+            this.txtTime.Name = "txtTime";
+            this.txtTime.OnHoverItemBaseColor = System.Drawing.Color.SteelBlue;
+            this.txtTime.OnHoverItemForeColor = System.Drawing.Color.AliceBlue;
+            this.txtTime.Radius = 5;
+            this.txtTime.Size = new System.Drawing.Size(117, 36);
+            this.txtTime.TabIndex = 22;
             // 
             // timetxt
             // 
             this.timetxt.AutoSize = true;
-            this.timetxt.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.timetxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.timetxt.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.timetxt.Location = new System.Drawing.Point(408, 100);
             this.timetxt.Name = "timetxt";
-            this.timetxt.Size = new System.Drawing.Size(47, 20);
+            this.timetxt.Size = new System.Drawing.Size(46, 20);
             this.timetxt.TabIndex = 21;
             this.timetxt.Text = "Time";
             // 
@@ -245,7 +245,7 @@
             this.cfmbtn.BorderColor = System.Drawing.Color.Black;
             this.cfmbtn.DialogResult = System.Windows.Forms.DialogResult.None;
             this.cfmbtn.FocusedColor = System.Drawing.Color.Empty;
-            this.cfmbtn.Font = new System.Drawing.Font("Roboto Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cfmbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cfmbtn.ForeColor = System.Drawing.Color.White;
             this.cfmbtn.Image = null;
             this.cfmbtn.ImageSize = new System.Drawing.Size(20, 20);
@@ -273,7 +273,7 @@
             this.visapay.BorderSize = 2;
             this.visapay.DialogResult = System.Windows.Forms.DialogResult.None;
             this.visapay.FocusedColor = System.Drawing.Color.Empty;
-            this.visapay.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.visapay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.visapay.ForeColor = System.Drawing.Color.AliceBlue;
             this.visapay.Image = ((System.Drawing.Image)(resources.GetObject("visapay.Image")));
             this.visapay.ImageSize = new System.Drawing.Size(50, 30);
@@ -289,7 +289,7 @@
             this.visapay.TabIndex = 17;
             this.visapay.Text = "VISA Card";
             this.visapay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.visapay.Click += new System.EventHandler(this.visapay_Click);
+      
             // 
             // QRpay
             // 
@@ -301,7 +301,7 @@
             this.QRpay.BorderSize = 2;
             this.QRpay.DialogResult = System.Windows.Forms.DialogResult.None;
             this.QRpay.FocusedColor = System.Drawing.Color.Empty;
-            this.QRpay.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.QRpay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.QRpay.ForeColor = System.Drawing.Color.AliceBlue;
             this.QRpay.Image = ((System.Drawing.Image)(resources.GetObject("QRpay.Image")));
             this.QRpay.ImageSize = new System.Drawing.Size(60, 35);
@@ -317,7 +317,7 @@
             this.QRpay.TabIndex = 16;
             this.QRpay.Text = "KHQR";
             this.QRpay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.QRpay.Click += new System.EventHandler(this.QRpay_Click);
+     
             // 
             // paydirect
             // 
@@ -329,7 +329,7 @@
             this.paydirect.BorderSize = 2;
             this.paydirect.DialogResult = System.Windows.Forms.DialogResult.None;
             this.paydirect.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.paydirect.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.paydirect.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.paydirect.ForeColor = System.Drawing.Color.AliceBlue;
             this.paydirect.Image = ((System.Drawing.Image)(resources.GetObject("paydirect.Image")));
             this.paydirect.ImageSize = new System.Drawing.Size(30, 30);
@@ -345,16 +345,16 @@
             this.paydirect.TabIndex = 15;
             this.paydirect.Text = "Direct Payment";
             this.paydirect.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.paydirect.Click += new System.EventHandler(this.paydirect_Click);
+        
             // 
             // paymethod
             // 
             this.paymethod.AutoSize = true;
-            this.paymethod.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.paymethod.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.paymethod.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.paymethod.Location = new System.Drawing.Point(408, 255);
             this.paymethod.Name = "paymethod";
-            this.paymethod.Size = new System.Drawing.Size(139, 20);
+            this.paymethod.Size = new System.Drawing.Size(134, 20);
             this.paymethod.TabIndex = 14;
             this.paymethod.Text = "Payment Method";
             // 
@@ -366,56 +366,56 @@
             this.seatshow.Size = new System.Drawing.Size(272, 276);
             this.seatshow.TabIndex = 13;
             // 
-            // numberric
+            // txtQuantity
             // 
-            this.numberric.BackColor = System.Drawing.Color.Transparent;
-            this.numberric.BaseColor = System.Drawing.Color.White;
-            this.numberric.BorderColor = System.Drawing.Color.Silver;
-            this.numberric.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.numberric.ButtonForeColor = System.Drawing.Color.White;
-            this.numberric.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.numberric.ForeColor = System.Drawing.Color.Black;
-            this.numberric.Location = new System.Drawing.Point(412, 210);
-            this.numberric.Maximum = ((long)(9999999));
-            this.numberric.Minimum = ((long)(0));
-            this.numberric.Name = "numberric";
-            this.numberric.Radius = 5;
-            this.numberric.Size = new System.Drawing.Size(100, 30);
-            this.numberric.TabIndex = 11;
-            this.numberric.Value = ((long)(0));
+            this.txtQuantity.BackColor = System.Drawing.Color.Transparent;
+            this.txtQuantity.BaseColor = System.Drawing.Color.White;
+            this.txtQuantity.BorderColor = System.Drawing.Color.Silver;
+            this.txtQuantity.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtQuantity.ButtonForeColor = System.Drawing.Color.White;
+            this.txtQuantity.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtQuantity.ForeColor = System.Drawing.Color.Black;
+            this.txtQuantity.Location = new System.Drawing.Point(412, 210);
+            this.txtQuantity.Maximum = ((long)(9999999));
+            this.txtQuantity.Minimum = ((long)(0));
+            this.txtQuantity.Name = "txtQuantity";
+            this.txtQuantity.Radius = 5;
+            this.txtQuantity.Size = new System.Drawing.Size(100, 30);
+            this.txtQuantity.TabIndex = 11;
+            this.txtQuantity.Value = ((long)(0));
             // 
             // Quantity
             // 
             this.Quantity.AutoSize = true;
-            this.Quantity.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Quantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Quantity.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Quantity.Location = new System.Drawing.Point(408, 183);
             this.Quantity.Name = "Quantity";
-            this.Quantity.Size = new System.Drawing.Size(72, 20);
+            this.Quantity.Size = new System.Drawing.Size(71, 20);
             this.Quantity.TabIndex = 9;
             this.Quantity.Text = "Quantity";
-            this.Quantity.Click += new System.EventHandler(this.gunaLabel1_Click);
+     
             // 
             // Vehicletxt
             // 
             this.Vehicletxt.AutoSize = true;
             this.Vehicletxt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Vehicletxt.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Vehicletxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Vehicletxt.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Vehicletxt.Location = new System.Drawing.Point(60, 189);
             this.Vehicletxt.Name = "Vehicletxt";
-            this.Vehicletxt.Size = new System.Drawing.Size(104, 20);
+            this.Vehicletxt.Size = new System.Drawing.Size(105, 20);
             this.Vehicletxt.TabIndex = 8;
             this.Vehicletxt.Text = "Vehicle Type";
             // 
             // Phonenumbertxt
             // 
             this.Phonenumbertxt.AutoSize = true;
-            this.Phonenumbertxt.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Phonenumbertxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Phonenumbertxt.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Phonenumbertxt.Location = new System.Drawing.Point(64, 22);
             this.Phonenumbertxt.Name = "Phonenumbertxt";
-            this.Phonenumbertxt.Size = new System.Drawing.Size(122, 20);
+            this.Phonenumbertxt.Size = new System.Drawing.Size(120, 20);
             this.Phonenumbertxt.TabIndex = 6;
             this.Phonenumbertxt.Text = "Phone Number";
             // 
@@ -446,7 +446,7 @@
             this.datepicker.CustomFormat = null;
             this.datepicker.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
             this.datepicker.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.datepicker.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datepicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.datepicker.ForeColor = System.Drawing.Color.Black;
             this.datepicker.Location = new System.Drawing.Point(64, 123);
             this.datepicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
@@ -466,18 +466,18 @@
             // Departuretxt
             // 
             this.Departuretxt.AutoSize = true;
-            this.Departuretxt.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Departuretxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Departuretxt.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Departuretxt.Location = new System.Drawing.Point(60, 100);
             this.Departuretxt.Name = "Departuretxt";
-            this.Departuretxt.Size = new System.Drawing.Size(123, 20);
+            this.Departuretxt.Size = new System.Drawing.Size(125, 20);
             this.Departuretxt.TabIndex = 3;
             this.Departuretxt.Text = "Departure Date";
             // 
             // Directiontxt
             // 
             this.Directiontxt.AutoSize = true;
-            this.Directiontxt.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Directiontxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Directiontxt.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Directiontxt.Location = new System.Drawing.Point(408, 21);
             this.Directiontxt.Name = "Directiontxt";
@@ -557,7 +557,7 @@
         private Guna.UI.WinForms.GunaButton printbtn;
         private System.Windows.Forms.Panel recieptshow;
         private Guna.UI.WinForms.GunaLabel Quantity;
-        private Guna.UI.WinForms.GunaNumeric numberric;
+        private Guna.UI.WinForms.GunaNumeric txtQuantity;
         private Guna.UI.WinForms.GunaLabel paymethod;
         private System.Windows.Forms.Panel seatshow;
         private Guna.UI.WinForms.GunaButton paydirect;
@@ -567,6 +567,6 @@
         private System.Windows.Forms.Button BUSbtn;
         private System.Windows.Forms.Button VIPbtn;
         private Guna.UI.WinForms.GunaLabel timetxt;
-        private Guna.UI.WinForms.GunaComboBox gunaComboBox1;
+        private Guna.UI.WinForms.GunaComboBox txtTime;
     }
 }
