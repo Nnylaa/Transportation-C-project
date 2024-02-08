@@ -17,36 +17,6 @@ namespace Transportation_Project
             InitializeComponent();
         }
 
-        private void bookingfrm_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void Idtxt_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void gunaLabel1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void visapay_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void QRpay_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void paydirect_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void cfmbtn_Click(object sender, EventArgs e)
         {
             recieptshow.Controls.Clear();

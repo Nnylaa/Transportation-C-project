@@ -31,12 +31,11 @@
             this.Vehicletypecon = new System.Windows.Forms.Panel();
             this.vehiclecontxt = new Guna.UI.WinForms.GunaLabel();
             this.vehiclebutt = new System.Windows.Forms.Panel();
-            this.driveridbox = new Guna.UI.WinForms.GunaButton();
-            this.colorbox = new Guna.UI.WinForms.GunaButton();
-            this.modelboc = new Guna.UI.WinForms.GunaButton();
-            this.licensebox = new Guna.UI.WinForms.GunaButton();
+            this.colorbo = new Guna.UI.WinForms.GunaTextBox();
+            this.modelboc = new Guna.UI.WinForms.GunaTextBox();
+            this.licensebo = new Guna.UI.WinForms.GunaTextBox();
+            this.ID = new System.Windows.Forms.Label();
             this.savebtn = new Guna.UI.WinForms.GunaButton();
-            this.driveridtxt = new System.Windows.Forms.Label();
             this.colortxt = new System.Windows.Forms.Label();
             this.modeltxt = new System.Windows.Forms.Label();
             this.licensetxt = new System.Windows.Forms.Label();
@@ -71,12 +70,11 @@
             // 
             // vehiclebutt
             // 
-            this.vehiclebutt.Controls.Add(this.driveridbox);
-            this.vehiclebutt.Controls.Add(this.colorbox);
+            this.vehiclebutt.Controls.Add(this.colorbo);
             this.vehiclebutt.Controls.Add(this.modelboc);
-            this.vehiclebutt.Controls.Add(this.licensebox);
+            this.vehiclebutt.Controls.Add(this.licensebo);
+            this.vehiclebutt.Controls.Add(this.ID);
             this.vehiclebutt.Controls.Add(this.savebtn);
-            this.vehiclebutt.Controls.Add(this.driveridtxt);
             this.vehiclebutt.Controls.Add(this.colortxt);
             this.vehiclebutt.Controls.Add(this.modeltxt);
             this.vehiclebutt.Controls.Add(this.licensetxt);
@@ -89,105 +87,70 @@
             this.vehiclebutt.Size = new System.Drawing.Size(1217, 640);
             this.vehiclebutt.TabIndex = 3;
             // 
-            // driveridbox
+            // colorbo
             // 
-            this.driveridbox.AnimationHoverSpeed = 0.07F;
-            this.driveridbox.AnimationSpeed = 0.03F;
-            this.driveridbox.BackColor = System.Drawing.Color.Transparent;
-            this.driveridbox.BaseColor = System.Drawing.Color.White;
-            this.driveridbox.BorderColor = System.Drawing.Color.DimGray;
-            this.driveridbox.BorderSize = 1;
-            this.driveridbox.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.driveridbox.FocusedColor = System.Drawing.Color.Empty;
-            this.driveridbox.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.driveridbox.ForeColor = System.Drawing.Color.White;
-            this.driveridbox.Image = null;
-            this.driveridbox.ImageSize = new System.Drawing.Size(20, 20);
-            this.driveridbox.Location = new System.Drawing.Point(965, 67);
-            this.driveridbox.Name = "driveridbox";
-            this.driveridbox.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.driveridbox.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.driveridbox.OnHoverForeColor = System.Drawing.Color.White;
-            this.driveridbox.OnHoverImage = null;
-            this.driveridbox.OnPressedColor = System.Drawing.Color.Black;
-            this.driveridbox.Radius = 5;
-            this.driveridbox.Size = new System.Drawing.Size(149, 37);
-            this.driveridbox.TabIndex = 18;
-            // 
-            // colorbox
-            // 
-            this.colorbox.AnimationHoverSpeed = 0.07F;
-            this.colorbox.AnimationSpeed = 0.03F;
-            this.colorbox.BackColor = System.Drawing.Color.Transparent;
-            this.colorbox.BaseColor = System.Drawing.Color.White;
-            this.colorbox.BorderColor = System.Drawing.Color.DimGray;
-            this.colorbox.BorderSize = 1;
-            this.colorbox.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.colorbox.FocusedColor = System.Drawing.Color.Empty;
-            this.colorbox.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.colorbox.ForeColor = System.Drawing.Color.White;
-            this.colorbox.Image = null;
-            this.colorbox.ImageSize = new System.Drawing.Size(20, 20);
-            this.colorbox.Location = new System.Drawing.Point(744, 69);
-            this.colorbox.Name = "colorbox";
-            this.colorbox.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.colorbox.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.colorbox.OnHoverForeColor = System.Drawing.Color.White;
-            this.colorbox.OnHoverImage = null;
-            this.colorbox.OnPressedColor = System.Drawing.Color.Black;
-            this.colorbox.Radius = 5;
-            this.colorbox.Size = new System.Drawing.Size(149, 37);
-            this.colorbox.TabIndex = 17;
+            this.colorbo.BackColor = System.Drawing.Color.Transparent;
+            this.colorbo.BaseColor = System.Drawing.Color.White;
+            this.colorbo.BorderColor = System.Drawing.Color.Silver;
+            this.colorbo.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.colorbo.FocusedBaseColor = System.Drawing.Color.White;
+            this.colorbo.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.colorbo.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.colorbo.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.colorbo.Location = new System.Drawing.Point(734, 69);
+            this.colorbo.Name = "colorbo";
+            this.colorbo.PasswordChar = '\0';
+            this.colorbo.Radius = 5;
+            this.colorbo.SelectedText = "";
+            this.colorbo.Size = new System.Drawing.Size(179, 41);
+            this.colorbo.TabIndex = 22;
             // 
             // modelboc
             // 
-            this.modelboc.AnimationHoverSpeed = 0.07F;
-            this.modelboc.AnimationSpeed = 0.03F;
             this.modelboc.BackColor = System.Drawing.Color.Transparent;
             this.modelboc.BaseColor = System.Drawing.Color.White;
-            this.modelboc.BorderColor = System.Drawing.Color.DimGray;
-            this.modelboc.BorderSize = 1;
-            this.modelboc.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.modelboc.FocusedColor = System.Drawing.Color.Empty;
+            this.modelboc.BorderColor = System.Drawing.Color.Silver;
+            this.modelboc.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.modelboc.FocusedBaseColor = System.Drawing.Color.White;
+            this.modelboc.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.modelboc.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.modelboc.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.modelboc.ForeColor = System.Drawing.Color.White;
-            this.modelboc.Image = null;
-            this.modelboc.ImageSize = new System.Drawing.Size(20, 20);
-            this.modelboc.Location = new System.Drawing.Point(301, 69);
+            this.modelboc.Location = new System.Drawing.Point(312, 69);
             this.modelboc.Name = "modelboc";
-            this.modelboc.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.modelboc.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.modelboc.OnHoverForeColor = System.Drawing.Color.White;
-            this.modelboc.OnHoverImage = null;
-            this.modelboc.OnPressedColor = System.Drawing.Color.Black;
+            this.modelboc.PasswordChar = '\0';
             this.modelboc.Radius = 5;
-            this.modelboc.Size = new System.Drawing.Size(149, 37);
-            this.modelboc.TabIndex = 16;
+            this.modelboc.SelectedText = "";
+            this.modelboc.Size = new System.Drawing.Size(179, 41);
+            this.modelboc.TabIndex = 21;
+            this.modelboc.TextChanged += new System.EventHandler(this.modelboc_TextChanged);
             // 
-            // licensebox
+            // licensebo
             // 
-            this.licensebox.AnimationHoverSpeed = 0.07F;
-            this.licensebox.AnimationSpeed = 0.03F;
-            this.licensebox.BackColor = System.Drawing.Color.Transparent;
-            this.licensebox.BaseColor = System.Drawing.Color.White;
-            this.licensebox.BorderColor = System.Drawing.Color.DimGray;
-            this.licensebox.BorderSize = 1;
-            this.licensebox.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.licensebox.FocusedColor = System.Drawing.Color.Empty;
-            this.licensebox.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.licensebox.ForeColor = System.Drawing.Color.White;
-            this.licensebox.Image = null;
-            this.licensebox.ImageSize = new System.Drawing.Size(20, 20);
-            this.licensebox.Location = new System.Drawing.Point(74, 69);
-            this.licensebox.Name = "licensebox";
-            this.licensebox.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.licensebox.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.licensebox.OnHoverForeColor = System.Drawing.Color.White;
-            this.licensebox.OnHoverImage = null;
-            this.licensebox.OnPressedColor = System.Drawing.Color.Black;
-            this.licensebox.Radius = 5;
-            this.licensebox.Size = new System.Drawing.Size(149, 37);
-            this.licensebox.TabIndex = 15;
+            this.licensebo.BackColor = System.Drawing.Color.Transparent;
+            this.licensebo.BaseColor = System.Drawing.Color.White;
+            this.licensebo.BorderColor = System.Drawing.Color.Silver;
+            this.licensebo.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.licensebo.FocusedBaseColor = System.Drawing.Color.White;
+            this.licensebo.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.licensebo.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.licensebo.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.licensebo.Location = new System.Drawing.Point(65, 69);
+            this.licensebo.Name = "licensebo";
+            this.licensebo.PasswordChar = '\0';
+            this.licensebo.Radius = 5;
+            this.licensebo.SelectedText = "";
+            this.licensebo.Size = new System.Drawing.Size(179, 41);
+            this.licensebo.TabIndex = 20;
+            // 
+            // ID
+            // 
+            this.ID.AutoSize = true;
+            this.ID.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ID.Location = new System.Drawing.Point(969, 74);
+            this.ID.Name = "ID";
+            this.ID.Size = new System.Drawing.Size(25, 20);
+            this.ID.TabIndex = 19;
+            this.ID.Text = "ID";
             // 
             // savebtn
             // 
@@ -215,22 +178,13 @@
             this.savebtn.TabIndex = 14;
             this.savebtn.Text = "SAVE";
             this.savebtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // driveridtxt
-            // 
-            this.driveridtxt.AutoSize = true;
-            this.driveridtxt.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.driveridtxt.Location = new System.Drawing.Point(964, 42);
-            this.driveridtxt.Name = "driveridtxt";
-            this.driveridtxt.Size = new System.Drawing.Size(74, 22);
-            this.driveridtxt.TabIndex = 12;
-            this.driveridtxt.Text = "DriverID";
+            this.savebtn.Click += new System.EventHandler(this.savebtn_Click);
             // 
             // colortxt
             // 
             this.colortxt.AutoSize = true;
             this.colortxt.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.colortxt.Location = new System.Drawing.Point(748, 43);
+            this.colortxt.Location = new System.Drawing.Point(740, 44);
             this.colortxt.Name = "colortxt";
             this.colortxt.Size = new System.Drawing.Size(52, 22);
             this.colortxt.TabIndex = 10;
@@ -240,7 +194,7 @@
             // 
             this.modeltxt.AutoSize = true;
             this.modeltxt.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.modeltxt.Location = new System.Drawing.Point(306, 42);
+            this.modeltxt.Location = new System.Drawing.Point(320, 42);
             this.modeltxt.Name = "modeltxt";
             this.modeltxt.Size = new System.Drawing.Size(60, 22);
             this.modeltxt.TabIndex = 8;
@@ -270,7 +224,10 @@
             this.vehiclebox.ForeColor = System.Drawing.Color.Black;
             this.vehiclebox.FormattingEnabled = true;
             this.vehiclebox.ItemHeight = 33;
-            this.vehiclebox.Location = new System.Drawing.Point(533, 69);
+            this.vehiclebox.Items.AddRange(new object[] {
+            "VIP",
+            "BUS"});
+            this.vehiclebox.Location = new System.Drawing.Point(547, 69);
             this.vehiclebox.Name = "vehiclebox";
             this.vehiclebox.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.vehiclebox.OnHoverItemForeColor = System.Drawing.Color.White;
@@ -282,7 +239,7 @@
             // 
             this.Vehicletypetxt.AutoSize = true;
             this.Vehicletypetxt.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Vehicletypetxt.Location = new System.Drawing.Point(529, 44);
+            this.Vehicletypetxt.Location = new System.Drawing.Point(543, 44);
             this.Vehicletypetxt.Name = "Vehicletypetxt";
             this.Vehicletypetxt.Size = new System.Drawing.Size(111, 22);
             this.Vehicletypetxt.TabIndex = 3;
@@ -328,13 +285,12 @@
         private System.Windows.Forms.Label Vehicletypetxt;
         private System.Windows.Forms.Label licensetxt;
         private System.Windows.Forms.Label modeltxt;
-        private System.Windows.Forms.Label driveridtxt;
         private System.Windows.Forms.Label colortxt;
         private Guna.UI.WinForms.GunaButton savebtn;
-        private Guna.UI.WinForms.GunaButton driveridbox;
-        private Guna.UI.WinForms.GunaButton colorbox;
-        private Guna.UI.WinForms.GunaButton modelboc;
-        private Guna.UI.WinForms.GunaButton licensebox;
         private Guna.UI.WinForms.GunaComboBox vehiclebox;
+        private System.Windows.Forms.Label ID;
+        private Guna.UI.WinForms.GunaTextBox licensebo;
+        private Guna.UI.WinForms.GunaTextBox modelboc;
+        private Guna.UI.WinForms.GunaTextBox colorbo;
     }
 }

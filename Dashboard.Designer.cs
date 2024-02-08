@@ -42,7 +42,7 @@
             this.btnReceipt = new Guna.UI.WinForms.GunaButton();
             this.btnVehicle = new Guna.UI.WinForms.GunaButton();
             this.btnPassenger = new Guna.UI.WinForms.GunaButton();
-            this.Bookingbtn = new Guna.UI.WinForms.GunaButton();
+            this.btnBooking = new Guna.UI.WinForms.GunaButton();
             this.gunaPanel3 = new Guna.UI.WinForms.GunaPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.gunaPanel1.SuspendLayout();
@@ -69,7 +69,6 @@
             this.gunaPanel1.Name = "gunaPanel1";
             this.gunaPanel1.Size = new System.Drawing.Size(1245, 800);
             this.gunaPanel1.TabIndex = 0;
-            this.gunaPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.gunaPanel1_Paint);
             // 
             // Show
             // 
@@ -78,7 +77,6 @@
             this.Show.Name = "Show";
             this.Show.Size = new System.Drawing.Size(1217, 700);
             this.Show.TabIndex = 1;
-            this.Show.Paint += new System.Windows.Forms.PaintEventHandler(this.Show_Paint);
             // 
             // gunaPanel5
             // 
@@ -103,7 +101,7 @@
             this.welcometxt.Size = new System.Drawing.Size(384, 36);
             this.welcometxt.TabIndex = 1;
             this.welcometxt.Text = "Welcome to, LARANA TRAVEL";
-            this.welcometxt.Click += new System.EventHandler(this.gunaLabel1_Click);
+        
             // 
             // Exit
             // 
@@ -134,7 +132,7 @@
             this.gunaPanel4.Controls.Add(this.btnReceipt);
             this.gunaPanel4.Controls.Add(this.btnVehicle);
             this.gunaPanel4.Controls.Add(this.btnPassenger);
-            this.gunaPanel4.Controls.Add(this.Bookingbtn);
+            this.gunaPanel4.Controls.Add(this.btnBooking);
             this.gunaPanel4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.gunaPanel4.Location = new System.Drawing.Point(0, 202);
             this.gunaPanel4.Name = "gunaPanel4";
@@ -249,32 +247,32 @@
             this.btnPassenger.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnPassenger.Click += new System.EventHandler(this.btnPassenger_Click);
             // 
-            // Bookingbtn
+            // btnBooking
             // 
-            this.Bookingbtn.AnimationHoverSpeed = 0.07F;
-            this.Bookingbtn.AnimationSpeed = 0.03F;
-            this.Bookingbtn.BackColor = System.Drawing.Color.Transparent;
-            this.Bookingbtn.BaseColor = System.Drawing.Color.Transparent;
-            this.Bookingbtn.BorderColor = System.Drawing.Color.Black;
-            this.Bookingbtn.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.Bookingbtn.FocusedColor = System.Drawing.Color.Empty;
-            this.Bookingbtn.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bookingbtn.ForeColor = System.Drawing.Color.SteelBlue;
-            this.Bookingbtn.Image = ((System.Drawing.Image)(resources.GetObject("Bookingbtn.Image")));
-            this.Bookingbtn.ImageSize = new System.Drawing.Size(35, 35);
-            this.Bookingbtn.Location = new System.Drawing.Point(6, 1);
-            this.Bookingbtn.Name = "Bookingbtn";
-            this.Bookingbtn.OnHoverBaseColor = System.Drawing.Color.PowderBlue;
-            this.Bookingbtn.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.Bookingbtn.OnHoverForeColor = System.Drawing.Color.White;
-            this.Bookingbtn.OnHoverImage = null;
-            this.Bookingbtn.OnPressedColor = System.Drawing.Color.Black;
-            this.Bookingbtn.Radius = 5;
-            this.Bookingbtn.Size = new System.Drawing.Size(244, 85);
-            this.Bookingbtn.TabIndex = 0;
-            this.Bookingbtn.Text = "Booking";
-            this.Bookingbtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.Bookingbtn.Click += new System.EventHandler(this.Bookingbtn_Click);
+            this.btnBooking.AnimationHoverSpeed = 0.07F;
+            this.btnBooking.AnimationSpeed = 0.03F;
+            this.btnBooking.BackColor = System.Drawing.Color.Transparent;
+            this.btnBooking.BaseColor = System.Drawing.Color.Transparent;
+            this.btnBooking.BorderColor = System.Drawing.Color.Black;
+            this.btnBooking.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnBooking.FocusedColor = System.Drawing.Color.Empty;
+            this.btnBooking.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBooking.ForeColor = System.Drawing.Color.SteelBlue;
+            this.btnBooking.Image = ((System.Drawing.Image)(resources.GetObject("btnBooking.Image")));
+            this.btnBooking.ImageSize = new System.Drawing.Size(35, 35);
+            this.btnBooking.Location = new System.Drawing.Point(6, 1);
+            this.btnBooking.Name = "btnBooking";
+            this.btnBooking.OnHoverBaseColor = System.Drawing.Color.PowderBlue;
+            this.btnBooking.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnBooking.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnBooking.OnHoverImage = null;
+            this.btnBooking.OnPressedColor = System.Drawing.Color.Black;
+            this.btnBooking.Radius = 5;
+            this.btnBooking.Size = new System.Drawing.Size(244, 85);
+            this.btnBooking.TabIndex = 0;
+            this.btnBooking.Text = "Booking";
+            this.btnBooking.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnBooking.Click += new System.EventHandler(this.Bookingbtn_Click);
             // 
             // gunaPanel3
             // 
@@ -328,7 +326,7 @@
         private Guna.UI.WinForms.GunaPanel gunaPanel4;
         private Guna.UI.WinForms.GunaPanel gunaPanel3;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private Guna.UI.WinForms.GunaButton Bookingbtn;
+        private Guna.UI.WinForms.GunaButton btnBooking;
         private Guna.UI.WinForms.GunaPanel gunaPanel5;
         private Guna.UI.WinForms.GunaPictureBox Exit;
         private Guna.UI.WinForms.GunaLabel welcometxt;

@@ -17,8 +17,25 @@ namespace Transportation_Project
             InitializeComponent();
         }
 
-        private void gunaLabel1_Click(object sender, EventArgs e)
+        public Dashboard(String name, String pass)
         {
+            InitializeComponent();
+            if (pass == "admin") {
+                btnBooking.Visible = true;
+                btnPassenger.Visible = true;
+                btnDriver.Visible = true;
+                btnVehicle.Visible = true;
+                btnReceipt.Visible = true;
+
+            }else 
+            {
+                btnBooking.Visible = true;
+                btnPassenger.Visible = true;
+                btnDriver.Visible = true;   
+                btnVehicle.Visible = true;
+                btnReceipt.Visible = false;
+            }
+           
 
         }
 
@@ -32,15 +49,7 @@ namespace Transportation_Project
             passfm.Show();
         }
 
-        private void gunaPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void Show_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+     
 
         private void Bookingbtn_Click(object sender, EventArgs e)
         {
@@ -88,5 +97,7 @@ namespace Transportation_Project
             Show.Controls.Add(drivefm);
             drivefm.Show();
         }
+
+       
     }
 }
